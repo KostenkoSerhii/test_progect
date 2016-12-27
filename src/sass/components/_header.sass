@@ -1,0 +1,31 @@
+$menu_link_color: #636b74
+header
+	background: #ededed
+ .menu_list
+ 	display: -webkit-flex
+ 	display: -moz-flex
+ 	display: -ms-flex
+ 	display: -o-flex
+ 	display: flex
+ 	justify-content: space-between
+ 	a
+ 		color: $menu_link_color
+ 		font: 400 14px/46px "Georgia"
+ 		flex-grow: 1
+ 		text-align: center
+ 		transition: all .4s
+ 		&:hover
+ 			background: #d9dadc
+ 		&.active
+ 			position: relative
+ 			color: #fff
+ 			background: #6a737c
+ 			&:before
+ 				content: ''
+ 				position: absolute
+ 				height: 4px
+ 				width: 100%
+ 				left: 0
+ 				top: 0
+ 				background: #f8b71a
+ 			

@@ -1,0 +1,51 @@
+.all-articles
+	.section-name
+		width: 102px
+		margin-left: -52px
+.all-articles
+	padding-top: 33px
+.article
+	margin-bottom: 20px
+	.wrapper
+		+clr
+section
+ 	img
+ 		float: left
+ 		margin-right: 17px
+.article-info
+	@extend .news-info
+	display: inline-block
+	position: relative
+	top: -7px
+.article__category
+	background-color: #f8b71a
+	color: #383a3c
+	display: inline-block
+	font: 700 11px/18px "Tahoma"
+	margin-top: 5px
+	padding: 0 10px
+	text-align: center
+	text-transform: uppercase
+.article__name
+	@extend .important-news
+	margin-top: 9px
+.article__author
+	color: #383a3c
+	font: 400 14px "Tahoma"
+	margin-top: 5px
+	position: relative
+	span.author-name
+		color: #e3a511
+		margin-left: 1px
+		position: absolute
+.article__brief
+	color: #383a3c
+	font: 400 13px/18px "Tahoma"
+	margin-top: 14px
+	padding-right: 12px
+	a
+		color: #e3a511
+		font-size: 14px
+		text-decoration: underline
+		&:hover
+			text-decoration: none

@@ -1,0 +1,28 @@
+---
+title: Coderiver
+h1: Дайджест новостей
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<h1>{{ h1 }}</h1>
+<!-- begin col  col_1-->
+<div class="col col_1">
+{% include "partials/_main-new.html" %}
+	{% include "partials/_news.html" %}
+</div>
+<!-- end col  col_1-->
+<!-- begin col col_2 -->
+<div class="col col_2">
+	{% include "partials/_article.html" %}
+</div>
+<!-- end col col_2 -->
+<!-- begin col col_3 -->
+<div class="col col_3">
+	{% include "partials/_author-column.html" %}
+	{% include "partials/_interviews.html" %}
+</div>
+<!-- end col col_3 -->
+
+
+{% endblock %}

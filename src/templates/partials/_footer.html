@@ -1,0 +1,15 @@
+<footer>
+	<!-- begin container -->
+	<div class="container">
+		<p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet <br>
+			Lorem ipsum dolor sit amet
+		</p>
+		<div class="footer-menu">
+			{% import "data/footer-menu.html" as tests %}
+			{% for test in tests.list %}
+			<a href="#">{{test.title}}</a>
+			{% endfor %}
+		</div>
+	</div>
+	<!-- end container -->
+</footer>

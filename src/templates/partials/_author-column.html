@@ -1,0 +1,20 @@
+<section class="author-column">
+	<h2 class="section-name">Колонка автора</h2>
+	{% import "data/author-column.html" as authors %}
+	{% for author in authors.list %}
+	<div class="author-column__post">
+		<img src="{{author.image}}" alt="{{author.alt}}">
+		<div class="column-info">
+			<span class="column-info__date">{{author.date}}</span>
+		</div>
+		<a class="author-column__title" href="#" target="_blank">
+			{{author.title}}
+		</a>
+		<div class="author-column__brief">
+			<span>{{author.author}}</span> 
+			{{author.brief}}
+		</div>
+	</div>
+	{% endfor %}
+</section>
+

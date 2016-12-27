@@ -1,0 +1,17 @@
+<section class="interview">
+	<h2 class="section-name">Опрос дня</h2>
+	<form  name="test">
+		<div class="interview__question">Что надо сделать, чтобы решить проблему востока Украины?
+		</div>
+		{% import "data/interviews.html" as interviews %}
+		{% for interview in interviews.list %}
+		<div class="input-wrapper">
+			<input type="radio" id="{{interview.id}}" name="{{interview.name}}" value="{{interview.value}}">
+			<label for="{{interview.id}}">{{interview.label}}</label>
+		</div>
+		{% endfor %}
+		<button  class="interview__btn" type="submit" >голосовать</button>
+		<a href="#" class="more_result">посмотреть результаты</a>
+	</form>
+</section>
+

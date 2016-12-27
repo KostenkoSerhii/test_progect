@@ -1,0 +1,29 @@
+<section class="all-articles">
+	<h2 class="section-name">Статьи</h2>
+	{% import "data/articles.html" as articles %}
+	{% for article in articles.list %}
+	<!-- begin article -->
+	<div class="article">
+		<div class="wrapper clearfix">
+			<img src="{{article.image}}" alt="{{article.alt}}">
+			<div class="article-info">
+				<span class="article-info__date">{{article.date}}</span>
+			</div>
+			<div class="article__category">{{article.category}}</div>
+			<a class="article__name" href="#" target="_blank">
+				{{article.article_name}}
+			</a>
+			<div class="article__author">
+				<span>Автор: </span>
+				<span class="author-name">{{article.author}}
+				</span>
+			</div>
+		</div>
+		<div class="article__brief">
+			{{article.brief}} 
+			<a href="#">...</a>
+		</div>
+	</div>
+	<!-- end article -->
+	{% endfor %}
+</section>

@@ -1,0 +1,21 @@
+<section class="all-news">
+	<h2 class="section-name">Все новости</h2>
+	{% import "data/all-news.html" as news %}
+	{% for new in news.list %}
+	<!-- begin news -->
+	<div class="news 
+	{% if new.mark %}mark{% endif%}
+	{% if new.photo %}news-info__photo{% endif%}
+	">		
+	<div class="news-info">
+		<span class="news-info__date">{{new.date}}</span>
+	</div>
+	<div class="news__content">
+		<a href="#" target="_blank">
+			{{new.content}}
+		</a>
+	</div>
+</div>
+<!-- end news -->
+{% endfor %}
+</section>
